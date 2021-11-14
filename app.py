@@ -10,7 +10,7 @@ clf = pickle.load(open('clf.pkl','rb'))
 loaded_vec = pickle.load(open('count_vect.pkl', 'rb'))
 
 # routes
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['GET', 'POST'])
 def predict():
     # get data
     
